@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DBSCAN Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>DBSCAN Clustering Result</h2>
+        <p><strong>EPS:</strong> {{ eps }}</p>
+        <p><strong>Min Samples:</strong> {{ min_samples }}</p>
+        <img src="{{ image_path }}" alt="DBSCAN Result">
+        <br><br>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>

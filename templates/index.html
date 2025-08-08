@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DBSCAN Cluster Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DBSCAN Cluster Visualizer</h1>
+        <form action="/result" method="POST">
+            <label for="eps">Epsilon (eps):</label>
+            <input type="number" step="0.01" name="eps" required>
+
+            <label for="min_samples">Min Samples:</label>
+            <input type="number" name="min_samples" required>
+
+            <button type="submit">Generate Plot</button>
+        </form>
+    </div>
+</body>
+</html>
